@@ -9,8 +9,8 @@ export default function Tabaco() {
           <Image
             src="/precario.png"
             alt="Preçário de tabaco Los Piratas"
-            width={1000}
-            height={1000}
+            width={600}
+            height={600}
             className="price-image"
             priority
           />
