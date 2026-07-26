@@ -13,7 +13,7 @@ export function Header() {
     <nav className="nav">
       <div className="container nav-inner">
         <Link className="brand" href="/">
-          <Image src="/logo-piratas.svg" alt="Logo Los Piratas" width={58} height={58} priority />
+          <Image src="/logo-piratas.svg.png" alt="Logo Los Piratas" width={58} height={58} priority />
           <span><b>Los Piratas</b><small>portal RP</small></span>
         </Link>
         <div className="nav-links">{links.map(([href, label]) => <Link key={href} href={href}>{label}</Link>)}</div>
@@ -30,7 +30,7 @@ export function PageHero({ title, eyebrow, children }: { title: string; eyebrow:
   return (
     <section className="page-hero">
       <div className="container title-card">
-        <Image src="/logo-piratas.svg" alt="Los Piratas" width={130} height={130} />
+        <Image src="/logo-piratas.svg.png" alt="Los Piratas" width={130} height={130} />
         <div>
           <span className="badge">{eyebrow}</span>
           <h1>{title}</h1>

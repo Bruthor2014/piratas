@@ -35,7 +35,7 @@ export default async function Home({ searchParams }: { searchParams: SearchParam
           <p className="lead">Portal interno para atividades e presenças. Cada evento tem uma palavra-passe definida pelo admin para impedir marcações de pessoas de fora.</p>
           <div className="actions"><Link className="btn" href="/tabaco">Preçário Tabaco</Link><Link className="btn secondary" href="/armas">Preçário Armas</Link></div>
         </section>
-        <aside className="card skull-card"><Image src="/logo-piratas.svg" alt="Logo Los Piratas" width={260} height={260} priority/><h3>Atividades protegidas</h3><p className="small">Só marca presença quem souber a senha do evento.</p></aside>
+        <aside className="card skull-card"><Image src="/logo-piratas.svg.png" alt="Logo Los Piratas" width={260} height={260} priority/><h3>Atividades protegidas</h3><p className="small">Só marca presença quem souber a senha do evento.</p></aside>
       </div>
     </main>
     <section className="container section">
