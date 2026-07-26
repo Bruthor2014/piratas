@@ -1,3 +1,24 @@
+import Image from 'next/image';
 import { PageHero, PageShell } from '../components/Shell';
-import { tabacoPrices } from '@/lib/data';
-export default function Tabaco(){return <PageShell><PageHero title="Preçário Tabaco" eyebrow="Tabela de venda">Preços e pacotes de tabaco para consulta interna. Editamos os valores quando definires os preços finais.</PageHero><section className="container section"><div className="grid two">{tabacoPrices.map(([nome,tipo,preco,nota])=><article className="card" key={nome}><h3>{nome}</h3><p><b>Tipo:</b> {tipo}</p><p className="price">{preco}</p><p>{nota}</p></article>)}</div></section><section className="container section"><article className="card"><h2>Notas de venda</h2><ol><li>Confirmar stock antes de aceitar encomendas.</li><li>Para lotes grandes, combinar entrega com escolta.</li><li>Não anunciar valores fora da organização sem autorização.</li></ol></article></section></PageShell>}
+
+export default function Tabaco() {
+  return (
+    <PageShell>
+      <PageHero title="Preçário Tabaco" eyebrow="Tabela de venda">
+        Consulta interna do preçário de tabaco da organização.
+      </PageHero>
+      <section className="container section">
+        <article className="card image-card">
+          <Image
+            src="/precario.png"
+            alt="Preçário de tabaco Los Piratas"
+            width={1600}
+            height={1000}
+            className="price-image"
+            priority
+          />
+        </article>
+      </section>
+    </PageShell>
+  );
+}

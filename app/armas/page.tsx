@@ -1,3 +1,24 @@
+import Image from 'next/image';
 import { PageHero, PageShell } from '../components/Shell';
-import { armasPrices } from '@/lib/data';
-export default function Armas(){return <PageShell><PageHero title="Preçário Armas" eyebrow="Tabela interna">Preçário de armas, carregadores e proteção. Os valores ficam como consulta interna da organização.</PageHero><section className="container section"><div className="grid">{armasPrices.map(([nome,tipo,preco,nota])=><article className="card" key={nome}><h3>{nome}</h3><p><b>Categoria:</b> {tipo}</p><p className="price">{preco}</p><p>{nota}</p></article>)}</div></section><section className="container section"><article className="card"><h2>Regras</h2><ol><li>Venda ou entrega só com autorização.</li><li>Confirmar identidade e função do membro.</li><li>Registar carregadores, coletes e armas entregues.</li></ol></article></section></PageShell>}
+
+export default function Armas() {
+  return (
+    <PageShell>
+      <PageHero title="Preçário Armas" eyebrow="Tabela interna">
+        Consulta interna do preçário de armas, carregadores e proteção.
+      </PageHero>
+      <section className="container section">
+        <article className="card image-card">
+          <Image
+            src="/armas.png"
+            alt="Preçário de armas Los Piratas"
+            width={1600}
+            height={1000}
+            className="price-image"
+            priority
+          />
+        </article>
+      </section>
+    </PageShell>
+  );
+}
