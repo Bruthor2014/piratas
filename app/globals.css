@@ -4,3 +4,5 @@
 .price{font:900 30px Arial;color:var(--gold2);margin:12px 0;text-shadow:0 0 16px rgba(216,167,55,.24)}
 
 .image-card{padding:10px;overflow:hidden}.price-image{width:100%;height:auto;display:block;border-radius:18px;border:1px solid var(--line)}
+
+.tobacco-price-image{max-width:620px;margin:0 auto}

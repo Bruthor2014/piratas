@@ -14,7 +14,7 @@ export default function Tabaco() {
             alt="Preçário de tabaco Los Piratas"
             width={1600}
             height={1000}
-            className="price-image"
+            className="price-image tobacco-price-image"
             priority
           />
         </article>
